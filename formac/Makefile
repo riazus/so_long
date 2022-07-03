@@ -47,7 +47,7 @@ INCLUDE	=	-I ./include -I./minilibx
 ###########################################
 OPENGL	=	-framework OpenGL -framework AppKit
 ###########################################
-CC		=	gcc
+CC		=	clang
 CFLAGS	=	-Wall -Wextra -Werror
 ###########################################
 GNL		=	get_next_line.c \

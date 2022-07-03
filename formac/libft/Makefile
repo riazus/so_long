@@ -24,16 +24,16 @@ BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
 					ft_lstmap.c ft_lstnew.c ft_lstsize.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-HEADER			= libft.h
-CC				= gcc
+HEADER			= ./libft/libft.h
+CC				= clang
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I $(HEADER)
+CFLAGS			= -Wall -Wextra -Werror
 
 NAME			= libft.a
 
 all:			$(NAME)
 
-$(NAME):		$(OBJS) $(HEADER)
+$(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS) $?
 
 clean:
